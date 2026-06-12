@@ -1,0 +1,22 @@
+{
+  "Flu": ["fever", "cough", "fatigue", "body ache", "chills", "sore throat"],
+  "Common Cold": ["cough", "runny nose", "sneezing", "sore throat", "nasal congestion", "fatigue"],
+  "Pneumonia": ["fever", "cough", "chest pain", "shortness of breath", "fatigue", "chills"],
+  "Asthma": ["shortness of breath", "wheezing", "cough", "chest tightness"],
+  "Bronchitis": ["cough", "fatigue", "chest discomfort", "mucus production", "shortness of breath"],
+  "Migraine": ["headache", "nausea", "sensitivity to light", "sensitivity to sound", "dizziness"],
+  "Hypertension": ["headache", "chest pain", "shortness of breath", "dizziness", "blurred vision"],
+  "Diabetes": ["increased thirst", "frequent urination", "fatigue", "hunger", "blurred vision"],
+  "Dengue": ["fever", "headache", "body ache", "pain behind eyes", "nausea", "rash"],
+  "Malaria": ["fever", "chills", "sweating", "fatigue", "headache", "nausea"],
+  "Typhoid": ["fever", "headache", "abdominal pain", "fatigue", "loss of appetite", "constipation"],
+  "GERD": ["heartburn", "regurgitation", "chest discomfort", "difficulty swallowing", "nausea"],
+  "Urinary Tract Infection": ["burning urination", "frequent urination", "cloudy urine", "pelvic pain", "fever"],
+  "Anemia": ["fatigue", "weakness", "pale skin", "shortness of breath", "dizziness"],
+  "Chickenpox": ["fever", "itching", "rash", "fatigue", "loss of appetite"],
+  "Allergic Rhinitis": ["sneezing", "runny nose", "itchy eyes", "nasal congestion", "fatigue"],
+  "Sinusitis": ["facial pain", "nasal congestion", "headache", "fever", "cough"],
+  "Appendicitis": ["abdominal pain", "nausea", "vomiting", "fever", "loss of appetite"],
+  "Arthritis": ["joint pain", "stiffness", "swelling", "reduced range of motion", "fatigue"],
+  "Depression": ["sadness", "loss of interest", "fatigue", "sleep problems", "loss of appetite"]
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Symptom Checker | AI Health Assistant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-wrapper">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="container-fluid px-3 px-md-4">
+        <div class="d-flex align-items-center justify-content-between py-3">
+          <div class="d-flex align-items-center gap-3">
+            <div class="header-logo">
+              <i class="bi bi-heart-pulse-fill"></i>
+            </div>
+            <div>
+              <h1 class="header-title mb-0">MediSense</h1>
+              <p class="header-subtitle mb-0">Intelligent Healthcare Companion</p>
+            </div>
+          </div>
+          <span id="statusBadge" class="status-badge status-online" title="Backend connection status">
+            <span id="statusDot" class="status-dot"></span>
+            <span id="statusLabel">Connecting…</span>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Chat Area -->
+    <main class="chat-main">
+      <div class="container-fluid px-3 px-md-4 h-100">
+        <div class="chat-card card shadow-lg border-0 h-100">
+          <div class="card-body d-flex flex-column p-0 h-100">
+            <!-- Chat Messages -->
+            <div id="chatMessages" class="chat-messages flex-grow-1" role="log" aria-live="polite" aria-label="Chat conversation">
+              <!-- Messages injected by JavaScript -->
+            </div>
+
+            <!-- Input Area -->
+            <div class="chat-input-area">
+              <div id="errorAlert" class="alert alert-danger alert-dismissible fade d-none mb-3" role="alert">
+                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                <span id="errorMessage"></span>
+                <button type="button" class="btn-close" id="dismissError" aria-label="Close"></button>
+              </div>
+
+              <div id="voiceStatus" class="voice-status d-none" role="status" aria-live="polite">
+                <span class="voice-status-icon"><i class="bi bi-mic-fill"></i></span>
+                <span id="voiceStatusText">Listening…</span>
+              </div>
+
+              <form id="chatForm">
+                <div class="input-group input-group-lg chat-input-group">
+                  <input
+                    type="text"
+                    id="symptomInput"
+                    class="form-control chat-input"
+                    placeholder="Type or speak your symptoms (e.g., fever, cough)..."
+                    autocomplete="off"
+                    aria-label="Enter your symptoms"
+                  >
+                  <button
+                    type="button"
+                    id="micBtn"
+                    class="btn mic-btn"
+                    aria-label="Start voice input"
+                    title="Speak your symptoms"
+                  >
+                    <span class="mic-btn-inner">
+                      <span class="mic-pulse mic-pulse-1" aria-hidden="true"></span>
+                      <span class="mic-pulse mic-pulse-2" aria-hidden="true"></span>
+                      <i class="bi bi-mic-fill mic-icon" id="micIcon"></i>
+                    </span>
+                  </button>
+                  <button type="submit" id="sendBtn" class="btn btn-primary send-btn" aria-label="Send message">
+                    <span id="sendBtnText">
+                      <i class="bi bi-send-fill"></i>
+                      <span class="d-none d-sm-inline ms-1">Send</span>
+                    </span>
+                    <span id="sendBtnSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </form>
+
+              <p class="input-hint text-muted mb-0 mt-2">
+                <i class="bi bi-info-circle me-1"></i>
+                Type or tap the <i class="bi bi-mic-fill"></i> microphone to describe symptoms. For informational guidance only — consult a healthcare professional for medical advice.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer text-center py-2">
+      <small class="text-muted">&copy; 2026 Smart Symptom Checker. For educational purposes only.</small>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
