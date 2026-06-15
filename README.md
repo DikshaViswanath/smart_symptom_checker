@@ -110,18 +110,6 @@ Open the frontend file in your browser:
 frontend/index.html
 ```
 
-## Learning Outcomes
-
-Through this project, I learned:
-
-* Building Machine Learning models for real-world applications
-* Data preprocessing and model training
-* Flask backend development
-* API communication between frontend and backend
-* JavaScript-based user interactions
-* Project organization and version control using Git and GitHub
-
-
 ## Future Improvements
 
 * User authentication
